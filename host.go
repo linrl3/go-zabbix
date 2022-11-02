@@ -17,13 +17,13 @@ const (
 	HostAvailabilityUnavailable = 2
 
 	// HostInventoryModeDisabled Host inventory in disabled
-	HostInventoryModeDisabled = -1
+	HostInventoryModeDisabled = "-1"
 
 	// HostInventoryModeManual Host inventory is managed manually
-	HostInventoryModeManual = 0
+	HostInventoryModeManual = "0"
 
 	// HostInventoryModeAutomatic Host inventory is managed automatically
-	HostInventoryModeAutomatic = 1
+	HostInventoryModeAutomatic = "1"
 
 	// HostTLSConnectUnencryped connect unencrypted to or from host
 	HostTLSConnectUnencryped = 1
@@ -81,7 +81,7 @@ type Host struct {
 	Description string `json:"description"`
 
 	// Inventory mode
-	InventoryMode int `json:"inventory_mode"`
+	InventoryMode string `json:"inventory_mode"`
 
 	// HostID of the proxy managing this host
 	ProxyHostID string `json:"proxy_hostid"`
